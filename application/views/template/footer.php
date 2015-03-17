@@ -1,7 +1,7 @@
 
 
       <footer class="footer">
-        <p class="text-center">&copy; 2014 Darts League App v.1.0.0 (beta)<br/>
+        <p class="text-center">&copy; 2014 <?php echo $settings->site_title; ?><br/>Darts League App v.<?php echo $this->config->item('version'); ?><br/>
         <small>Developed by <a href="http://www.cloud-wales.co.uk" target="_blank">Cloud Wales</a> <i>Web Development</i></small></p>
       </footer>
 

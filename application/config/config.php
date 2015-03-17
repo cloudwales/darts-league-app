@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -496,3 +498,16 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Version control of the app
+|--------------------------------------------------------------------------
+| 
+| For the developer only
+|
+*/
+
+$config['version'] = '1.0 beta';

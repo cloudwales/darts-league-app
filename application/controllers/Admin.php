@@ -3,8 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
 
-	
-	// Frontend pages
+	public function __construct()
+	{
+		parent::__construct();
+		
+	}
 
 	public function index()
 	{
