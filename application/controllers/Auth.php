@@ -6,14 +6,13 @@ class Auth extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(array('auth_model', 'home_model'));
 	}
+
 	
 	// Display the login page
 	public function login()
 	{
-		$data['options'] = $this->home_model->get_options();
-		$this->load->view('login', $data);
+		$this->load->view('auth/login');
 	}
 
 	// Validate login
@@ -21,16 +20,17 @@ class Auth extends CI_Controller {
 	{
 		$username = $this->input->post('username');
       	$password = $this->input->post('password');
+
 		$query = $this->auth_model->validate($username, $password); 
 
 		// If login fails
-		if ($query == FALSE)
+		if ($query == false)
 		{			
 			$this->session->set_flashdata('message', '<br/><p class="alert alert-danger">Login Failed !!!</p>');
 			redirect('login', 'refresh');
 		}
 		// If login is a success then set the session variables and redirect home
-		elseif($query == TRUE)
+		elseif($query == true)
 		{	
 			$data = array(
 				'username' => $this->input->post('username'),
