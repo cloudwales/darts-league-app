@@ -108,7 +108,7 @@
                       <li role="presentation"><a href="<?php echo base_url(''); ?>">League Managment</a></li>
                       <li class="divider"></li>
                       <li role="presentation"><a href="<?php echo base_url('users'); ?>">User Managment</a></li>
-                      <li role="presentation"><a href="<?php echo base_url(''); ?>">Settings</a></li>
+                      <li role="presentation"><a href="<?php echo base_url('settings'); ?>">Settings</a></li>
                       <li role="presentation"><a href="<?php echo base_url('logout'); ?>">Logout</a></li>
                     </ul>
                 </li>
@@ -124,4 +124,4 @@
 
 
       </div>
-      <p><?php echo $this->session->flashdata('message'); ?></p>  
+      <?php echo $this->session->flashdata('message'); ?> 

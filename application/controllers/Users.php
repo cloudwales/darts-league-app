@@ -14,7 +14,7 @@ class Users extends CI_Controller {
 	public function index()
 	{
 		$data['page'] = 'users'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 		$data['users'] = $this->user_model->get_users();
 
 		// Check if user is authenticated
@@ -32,7 +32,7 @@ class Users extends CI_Controller {
 		$this->load->library('form_validation');
 
 		$data['page'] = 'new_user'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 		$id = $this->uri->segment(3);
 
 		// Check if user is authenticated
@@ -68,7 +68,7 @@ class Users extends CI_Controller {
 		$this->load->library('form_validation');
 
 		$data['page'] = 'edit_user'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 		$id = $this->uri->segment(3);
 		$data['user'] = $this->user_model->get_single_user($id);
 
@@ -106,7 +106,7 @@ class Users extends CI_Controller {
 		$this->load->library('encryption');
 
 		$data['page'] = 'edit_user'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 		$id = $this->uri->segment(3);
 
 		$data['user'] = $this->user_model->get_single_user($id);

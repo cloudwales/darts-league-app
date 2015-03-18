@@ -1,6 +1,11 @@
 <div class="row marketing">
     <div class="col-lg-12">
-<span class="pull-right"><a href="<?php echo base_url('users/new_user');?>" class="btn btn-sm btn-primary">New User</a></span><br/>
+		<h3>User Managment<span class="pull-right"><a href="<?php echo base_url('users/new_user');?>" class="btn btn-xs btn-primary">New User</a></span></h3>
+	
+
+
+
+
 <table class="table ">
 	<tr>
 		<th>ID</th>

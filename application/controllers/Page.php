@@ -14,7 +14,7 @@ class Page extends CI_Controller {
 	public function index()
 	{
 		$data['page'] = 'home'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 
 		$this->load->view('template/header', $data);
 		$this->load->view('page/home_page', $data);
@@ -27,7 +27,7 @@ class Page extends CI_Controller {
 	{
 
 		$data['page'] = 'about'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 
 		$this->load->view('template/header', $data);
 		$this->load->view('page/about', $data);
@@ -39,7 +39,7 @@ class Page extends CI_Controller {
 	public function contact()
 	{
 		$data['page'] = 'contact'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 
 		$this->load->view('template/header',$data);
 		$this->load->view('page/contact', $data);
@@ -51,7 +51,7 @@ class Page extends CI_Controller {
 	public function league_tables()
 	{
 		$data['page'] = 'league_tables'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 
 		$this->load->view('template/header',$data);
 		$this->load->view('page/league_tables', $data);
@@ -63,7 +63,7 @@ class Page extends CI_Controller {
 	public function submit_results()
 	{
 		$data['page'] = 'submit_results'; // sets the active nav bar class
-		$data['settings'] = $this->page_model->get_settings();
+		$data['settings'] = $this->settings_model->get_settings();
 
 		$this->load->view('template/header',$data);
 		$this->load->view('page/submit_results', $data);

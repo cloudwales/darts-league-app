@@ -10,15 +10,6 @@ class Page_model extends CI_Model {
 		
 	}
 
-	public function get_settings()
-	{
-		$query = $this->db->get('settings');
-		return $query->row();
-	}
-
-
-
-
 }
 
 /* End of file Frontend_model.php */
