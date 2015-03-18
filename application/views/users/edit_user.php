@@ -1,6 +1,6 @@
 <div class="row marketing">
     <div class="col-lg-12">
-
+<h3>Edit User</h3>
 <form role="form" action="<?php echo base_url('users/edit_user'); ?>/<?php echo $user->id; ?>" method="POST">
 	<div class="form-group">
     <label for="name">Name</label>

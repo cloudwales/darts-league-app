@@ -105,7 +105,7 @@ class Users extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->library('encryption');
 
-		$data['page'] = 'edit_user'; // sets the active nav bar class
+		$data['page'] = 'change_password'; // sets the active nav bar class
 		$data['settings'] = $this->settings_model->get_settings();
 		$id = $this->uri->segment(3);
 

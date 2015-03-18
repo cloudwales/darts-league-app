@@ -1,7 +1,7 @@
 
 <div class="row marketing">
     <div class="col-lg-12">
-
+<h3>New User</h3>
 <form role="form" action="<?php echo base_url('users/new_user'); ?>" method="POST">
 	<div class="form-group">
     <label for="name">Name</label>

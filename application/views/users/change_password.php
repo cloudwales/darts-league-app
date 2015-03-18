@@ -1,6 +1,8 @@
 <div class="row marketing">
     <div class="col-lg-12">
-
+<h3>
+  Change Password
+</h3>
 <form role="form" action="<?php echo base_url('users/change_password'); ?>/<?php echo $user->id; ?>" method="POST">
   <div class="form-group">
     <label for="password">Password</label>
