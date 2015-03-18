@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Frontend extends CI_Controller {
+class Page extends CI_Controller {
 
 	public function __construct()
 	{
@@ -17,7 +17,7 @@ class Frontend extends CI_Controller {
 		$data['settings'] = $this->page_model->get_settings();
 
 		$this->load->view('template/header', $data);
-		$this->load->view('frontend/home_page', $data);
+		$this->load->view('page/home_page', $data);
 		$this->load->view('template/footer', $data);
 	}
 
@@ -30,7 +30,7 @@ class Frontend extends CI_Controller {
 		$data['settings'] = $this->page_model->get_settings();
 
 		$this->load->view('template/header', $data);
-		$this->load->view('frontend/about', $data);
+		$this->load->view('page/about', $data);
 		$this->load->view('template/footer', $data);
 	}
 
@@ -42,7 +42,7 @@ class Frontend extends CI_Controller {
 		$data['settings'] = $this->page_model->get_settings();
 
 		$this->load->view('template/header',$data);
-		$this->load->view('frontend/contact', $data);
+		$this->load->view('page/contact', $data);
 		$this->load->view('template/footer', $data);
 	}
 	
@@ -54,7 +54,7 @@ class Frontend extends CI_Controller {
 		$data['settings'] = $this->page_model->get_settings();
 
 		$this->load->view('template/header',$data);
-		$this->load->view('frontend/league_tables', $data);
+		$this->load->view('page/league_tables', $data);
 		$this->load->view('template/footer', $data);
 	}
 
@@ -66,7 +66,7 @@ class Frontend extends CI_Controller {
 		$data['settings'] = $this->page_model->get_settings();
 
 		$this->load->view('template/header',$data);
-		$this->load->view('frontend/submit_results', $data);
+		$this->load->view('page/submit_results', $data);
 		$this->load->view('template/footer', $data);
 	}
 

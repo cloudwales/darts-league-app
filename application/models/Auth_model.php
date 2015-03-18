@@ -23,7 +23,7 @@ class Auth_model extends CI_Model {
 		$sha_password = sha1($password);
 	    $this->db->where('username', $username);
 	    $this->db->where('password', $sha_password);
-	    $this->db->where('active', 1);
+	    // $this->db->where('active', 1);
 
 		$query = $this->db->get('users');
 

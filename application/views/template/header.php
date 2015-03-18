@@ -15,7 +15,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="<?php echo base_url('');?>assets/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -104,11 +104,11 @@
                     </a>
 
                     <ul class="dropdown-menu" role="menu">              
-                      <li role="presentation"><a href="<?php echo base_url('logout'); ?>">Team Managment</a></li>
-                      <li role="presentation"><a href="<?php echo base_url('logout'); ?>">League Managment</a></li>
+                      <li role="presentation"><a href="<?php echo base_url(''); ?>">Team Managment</a></li>
+                      <li role="presentation"><a href="<?php echo base_url(''); ?>">League Managment</a></li>
                       <li class="divider"></li>
-                      <li role="presentation"><a href="<?php echo base_url('logout'); ?>">User Managment</a></li>
-                      <li role="presentation"><a href="<?php echo base_url('logout'); ?>">Settings</a></li>
+                      <li role="presentation"><a href="<?php echo base_url('users'); ?>">User Managment</a></li>
+                      <li role="presentation"><a href="<?php echo base_url(''); ?>">Settings</a></li>
                       <li role="presentation"><a href="<?php echo base_url('logout'); ?>">Logout</a></li>
                     </ul>
                 </li>
